@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assigment 3</title>
+    <!-- Link bootstarp css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- link ccs internal  -->
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body onload="hiddenLoading()">
+    <div class="overlay" id="loading">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header class="tracker">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <div class="tracker-judul">COV-19 TRACKER</div>
+            <div class="sub-judul-tracker">
+              Website yang berisi tracking COVID-19 dengan mudah dari seluruh
+              dunia
+            </div>
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="kotak-tracker">
+              <div class="row">
+                <div class="col-12">
+                  <div class="kotak-judul">
+                    <h3>COV-19 TRACKER</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="row trackerOnline">
+                <div class="col-12">
+                  <div class="form-tracker">
+                    <input
+                      type="text"
+                      name="inputNegara"
+                      id="inputNegara"
+                      class="form-control"
+                      value="indonesia"
+                    />
+                    <input
+                      type="date"
+                      name="inputDate"
+                      id="inputDate"
+                      class="form-control"
+                    />
+                    <button class="btn btn-form" id="cariTracker">Cari</button>
+                  </div>
+                </div>
+              </div>
+              <div class="negara-tracker" id="negaraTracker"></div>
+              <div class="row justify-content-center">
+                <div class="col-md-4 col-12 mb-3 mt-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/activities.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">Active Cases</h6>
+                      <p class="card-text" id="activeCase"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 mb-3 mt-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/plus.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">New Cases</h6>
+                      <p class="card-text" id="newCases"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 mb-3 mt-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/success.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">Recovered Cases</h6>
+                      <p class="card-text" id="recoverCases"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 mb-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/total.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">Total Cases</h6>
+                      <p class="card-text" id="totalCases"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 mb-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/RIP.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">Total Deaths</h6>
+                      <p class="card-text" id="totalDeaths"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12 mb-3">
+                  <div class="card m-auto text-center">
+                    <div class="card-body">
+                      <div class="icon-tracker">
+                        <img src="./images/test.png" alt="" />
+                      </div>
+                      <h6 class="card-subtitle mb-2">Total Test</h6>
+                      <p class="card-text" id="totalTest"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="population"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- script js bootstrap -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- script js internal -->
+    <script src="./style/script.js"></script>
+  </body>
+</html>

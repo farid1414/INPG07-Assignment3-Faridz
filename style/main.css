@@ -1,0 +1,185 @@
+* {
+  font-family: sans-serif;
+}
+.tracker {
+  background-image: linear-gradient(
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.5),
+      rgba(151, 149, 149, 0.75)
+    ),
+    url("../images/covid.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+}
+
+.tracker .tracker-judul {
+  margin-top: 70%;
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.tracker .sub-judul-tracker {
+  margin-top: 10px;
+  color: rgb(233, 227, 227);
+  font-size: 16px;
+  font-weight: 500;
+}
+.tracker .kotak-tracker {
+  margin-top: 30px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tracker .kotak-tracker .kotak-judul {
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+.tracker .kotak-tracker .kotak-judul h3 {
+  font-weight: 600;
+}
+.tracker .kotak-tracker .form-tracker {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+}
+.tracker .kotak-tracker input {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+.tracker .kotak-tracker .form-tracker .btn-form {
+  padding: 5px 20px;
+  border-radius: 20px;
+  background-color: rgb(0, 26, 255);
+  color: white;
+  font-weight: 500;
+}
+.tracker .kotak-tracker .card .icon-tracker {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.tracker .kotak-tracker .card .icon-tracker img {
+  width: 100%;
+  height: 100%;
+}
+.tracker .kotak-tracker .negara-tracker {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+.tracker .kotak-tracker .card h6.card-subtitle {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.tracker .kotak-tracker .card {
+  width: 12rem;
+  background-color: #07f5d5;
+  color: black;
+  border-radius: 10px;
+  border: none;
+}
+.tracker .kotak-tracker .card .card-text {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.population {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* CSS untuk loading */
+.overlay {
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  text-align: center;
+  background: rgb(255, 255, 255, 0.7);
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top: 50%;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid red;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: red transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tracker {
+    padding: 15px 0;
+  }
+  .tracker .tracker-judul {
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .tracker .kotak-tracker {
+    margin-top: 2.5rem;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .tracker .kotak-tracker .form-tracker {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tracker .kotak-tracker .form-tracker {
+    display: block;
+    width: 80%;
+  }
+  .tracker .kotak-tracker input {
+    margin-bottom: 15px;
+  }
+  .tracker .kotak-tracker .form-tracker .btn-form {
+    display: block;
+    width: 100%;
+  }
+  .tracker .kotak-tracker .card {
+    width: 16rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 20px;
+  }
+}
